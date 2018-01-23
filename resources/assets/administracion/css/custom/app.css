@@ -1,0 +1,14 @@
+/*coreccion de estilos de error de jsvalidator*/
+.has-error .form-control-feedback,
+.has-error .form-control-label,
+.has-error .col-form-label,
+.has-error .form-check-label,
+.has-error .custom-control,
+.has-error .error-help-block
+{
+    color: #f31a1a;
+}
+.has-error .form-control
+{
+	border-color: #f31a1a;
+}

@@ -1,0 +1,14 @@
+/node_modules
+/public/hot
+/public/storage
+/public/webpay/*
+/storage/*.key
+/storage/framework/views/*
+/vendor
+/.idea
+/.vagrant
+/blog
+Homestead.json
+Homestead.yaml
+npm-debug.log
+/.env

@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateContactoLlamadasTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('contacto_llamadas', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre', 100);
+            $table->string('email', 100);
+            $table->string('telefono', 50);
+            $table->string('pais');
+            $table->date('fecha');
+            $table->time('hora');
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('contacto_llamadas');
+    }
+}
